@@ -19,7 +19,7 @@ server = app.server
 app.config.suppress_callback_exceptions = True
 
 
-# Load data from csv
+# Load data from csvgit push -u origin felipe
 # Load data from csv
 def load_data():
     data = pd.read_csv("datos_energia.csv")
@@ -34,6 +34,11 @@ data = load_data()
 #modificacion archivo
 def nueva_funcion():
     return None
+
+#Otra funcion que nada hace
+def otra_funcion():
+    return None
+
 # Graficar serie
 def plot_series(data, initial_date, proy):
     data_plot = data.loc[initial_date:]
